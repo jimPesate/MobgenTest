@@ -1,0 +1,16 @@
+group 'com.mobgen'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'io.rest-assured:rest-assured:3.0.3'
+    testCompile 'io.rest-assured:json-schema-validator:3.0.3'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
